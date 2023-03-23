@@ -84,7 +84,7 @@ export default function() {
     }
 
     function addRoutes(){
-        router.add("SPA-universe/","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/home.html")
+        router.add("/","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/home.html")
         router.add("/exploration","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/exploration.html")
         router.add("/universe","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/universe.html")
         router.add(404, "https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/error.html")
