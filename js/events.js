@@ -62,6 +62,12 @@ export default function() {
 
     }
 
+    function windowOnLoad(){
+        window.addEventListener("load", function(){
+            Selectors.pages.innerHTML = `<h1>Explore o Universo</h1>
+            <button>Quero saber mais</button>`
+        })
+    }
     function windowPopState(){
         window.addEventListener("popstate", function(){
             var {pathname} = window.location
@@ -85,6 +91,7 @@ export default function() {
 
     function addRoutes(){
         router.add("/","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/home.html")
+        router.add("/home","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/home.html")
         router.add("/exploration","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/exploration.html")
         router.add("/universe","https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/universe.html")
         router.add(404, "https://raw.githubusercontent.com/1felipeaac/SPA-universe/main/pages/error.html")
@@ -93,6 +100,7 @@ export default function() {
     return{
         buildPages,
         windowPopState,
+        windowOnLoad,
         navegation,
         addRoutes
     }
