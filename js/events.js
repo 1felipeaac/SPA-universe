@@ -30,7 +30,7 @@ export default function() {
         })
         var classToReplace = 'page-'+ element
 
-        Selectors.body.style.backgroundImage = `url("https://github.com/1felipeaac/SPA-universe/blob/main/assets/img-${element}.png")`
+        Selectors.body.style.backgroundImage = `url("https://github.com/1felipeaac/SPA-universe/blob/main/assets/img-${element}.png?raw=true")`
 
         Selectors.pages.classList.replace(classToRemove, classToReplace)
 
