@@ -84,10 +84,10 @@ export default function() {
     }
 
     function addRoutes(){
-        router.add("/","/pages/home.html")
-        router.add("/exploration","/pages/exploration.html")
-        router.add("/universe","/pages/universe.html")
-        router.add(404, "/pages/error.html")
+        router.add("/","https://github.com/1felipeaac/SPA-universe/blob/main/pages/home.html")
+        router.add("/exploration","https://github.com/1felipeaac/SPA-universe/blob/main/pages/exploration.html")
+        router.add("/universe","https://github.com/1felipeaac/SPA-universe/blob/main/pages/universe.html")
+        router.add(404, "https://github.com/1felipeaac/SPA-universe/blob/main/pages/error.html")
     }
 
     return{
